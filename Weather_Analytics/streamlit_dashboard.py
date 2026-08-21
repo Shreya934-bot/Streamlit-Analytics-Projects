@@ -1,6 +1,6 @@
 # Fixed Weather Intelligence Dashboard
 # Replace your current dashboard file with this version.
-
+from pathlib import Path
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -49,7 +49,8 @@ def chart_theme(fig,height=450):
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv("weather_data.csv").drop_duplicates()
+    data_path = Path(__file__).resolve().parent / "weather_data.csv"
+    df = pd.read_csv(data_path).drop_duplicates()
     df["Date"]=pd.to_datetime(df["Date"],errors="coerce"); df=df.dropna(subset=["Date"])
     df["Temperature"]=pd.to_numeric(df["Temperature"],errors="coerce")
     df["Humidity"]=pd.to_numeric(df["Humidity"],errors="coerce")
