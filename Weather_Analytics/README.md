@@ -1,10 +1,4 @@
-Yes. Since this project is now going into your separate **`Streamlit-Analytics-Projects`** repository, we should change the README so it looks like a **standalone project**, not `Day 24` inside the RFT internship repository.
 
-Your current README already documents the Weather Data Analytics System, its visualizations, moving-average prediction, CSV report, and Streamlit dashboard. 
-
-Replace the current **`Weather_Analytics/README.md`** completely with this:
-
-````markdown
 # 🌦️ Weather Data Analytics Dashboard
 
 An interactive Python-based Weather Data Analytics project that analyzes weather data, identifies temperature patterns, compares cities, visualizes weather conditions, predicts future temperature using a moving average, and presents the results through an interactive Streamlit dashboard.
