@@ -7,7 +7,7 @@ An interactive **Employee Performance Analytics Dashboard** built using **Python
 
 ## 🚀 Live Demo
 
-🔗 **Streamlit App:** Add your deployed Streamlit link here
+🔗 **Streamlit App:** https://shreya-employee-analytics.streamlit.app/
 
 ---
 
