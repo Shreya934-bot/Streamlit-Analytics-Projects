@@ -5,6 +5,12 @@ An interactive Python-based Weather Data Analytics project that analyzes weather
 
 ---
 
+## 🚀 Live Demo
+
+🌐 **Explore the deployed Weather Intelligence Dashboard here:**
+
+https://shreya-weather-intelligence.streamlit.app/
+
 ## 📌 Project Overview
 
 The **Weather Data Analytics Dashboard** reads weather data from a CSV dataset and transforms it into meaningful insights through data analysis, visualization, report generation, and interactive dashboard development.
