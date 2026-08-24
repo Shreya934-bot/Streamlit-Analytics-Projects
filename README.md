@@ -1,150 +1,383 @@
+Yes. I checked the actual repository structure and current README. It now has all three project folders—**Weather Analytics, Employee Performance Analytics, and Fraud Detection & Transaction Analysis**—but the current root README only properly showcases the first two. ([GitHub][1])
 
-# 📊 Streamlit Analytics Projects
+I would replace the entire root `README.md` with this. It is more polished, recruiter-friendly, personal, and gives the repository a proper **Shreya Verma portfolio brand**.
 
-A collection of interactive data analytics and visualization projects built using **Python, Pandas, Plotly, Matplotlib, and Streamlit**.
+````md
+<div align="center">
 
-Each project focuses on transforming raw data into meaningful insights through interactive dashboards, visualizations, filtering, and downloadable reports.
+# 📊 Shreya's Analytics Lab
 
----
+### Turning Data into Insights. Insights into Interactive Experiences.
 
-## 🚀 Live Projects
+**A growing collection of end-to-end Data Analytics, Visualization, and Intelligent Application projects built by Shreya Verma.**
 
-### 1. 🌦️ Weather Intelligence Dashboard
+<br>
 
-An interactive weather analytics application designed to analyze weather data and present meaningful insights through an easy-to-use Streamlit dashboard.
+[![Python](https://img.shields.io/badge/Python-Data%20Analytics-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive%20Apps-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Visualizations-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shreya934-bot/Streamlit-Analytics-Projects)
 
-#### 🔗 Live Application
-👉 [Open Weather Intelligence Dashboard](https://shreya-weather-intelligence.streamlit.app/)
+<br>
 
-#### ✨ Features
-- Interactive weather data analysis
-- Data visualization and trend analysis
-- User-friendly dashboard interface
-- Dynamic filtering and exploration
-- Insightful weather analytics
+**Python • Data Analytics • Visualization • Streamlit • Machine Learning**
 
-📁 Project Folder: `Weather_Analytics`
-
----
-
-### 2. 📊 Employee Performance Intelligence
-
-An interactive workforce analytics dashboard for analyzing employee performance, attendance, departmental insights, and overall workforce trends.
-
-#### 🔗 Live Application
-👉 [Open Employee Performance Intelligence](https://shreya-employee-analytics.streamlit.app/)
-
-#### ✨ Features
-- Interactive department filters
-- Performance score filtering
-- Attendance range analysis
-- Key Performance Indicator (KPI) cards
-- Department-wise performance analysis
-- Employee performance categorization
-- Top performer identification
-- Attendance analysis and trends
-- Employee-level insights
-- Downloadable filtered reports
-- Interactive visualizations using Plotly
-
-📁 Project Folder: `Employees_Perfromance_Analytics`
+</div>
 
 ---
 
-## 🛠️ Technologies Used
+## 👋 Welcome
 
-- **Python**
-- **Streamlit**
-- **Pandas**
-- **Plotly**
-- **Matplotlib**
-- **NumPy**
-- **CSV**
-- **Git & GitHub**
+Welcome to my **Analytics Lab** — a collection of hands-on projects where I explore data, uncover patterns, build meaningful visualizations, and transform analysis into interactive applications.
+
+This repository represents my journey of moving beyond notebooks and static charts to building **end-to-end analytics experiences**.
+
+Every project follows a simple philosophy:
+
+> ### **Raw data is only the beginning. The real value comes from understanding it.**
+
+From cleaning datasets and discovering trends to designing dashboards and deploying them for anyone to explore, each project is an opportunity to turn data into something useful.
 
 ---
 
-## 📂 Repository Structure
+# 🚀 Explore the Live Projects
+
+All three projects in this repository are deployed as interactive Streamlit applications.
+
+| # | Project | Focus | Live App |
+|:--:|---|---|---|
+| 🌦️ | **Weather Intelligence Dashboard** | Weather patterns, trends & exploration | [🚀 Launch App](https://shreya-weather-intelligence.streamlit.app/) |
+| 👥 | **Employee Performance Intelligence** | Performance, attendance & workforce insights | [🚀 Launch App](https://shreya-employee-analytics.streamlit.app/) |
+| 🛡️ | **Fraud Detection Intelligence** | Transaction analysis, suspicious activity & risk | [🚀 Launch App](https://shreya-fraud-detection-intelligence.streamlit.app/) |
+
+---
+
+# 🌟 The Projects
+
+## 🌦️ 01 — Weather Intelligence Dashboard
+
+> **Exploring weather data through interactive analytics and visual storytelling.**
+
+An interactive application designed to make weather data easier to explore and understand. The project focuses on transforming raw weather information into meaningful trends and visual insights.
+
+### ✨ Highlights
+
+- Interactive weather data exploration
+- Dynamic filtering
+- Trend analysis
+- Statistical insights
+- Visual exploration of weather patterns
+- User-friendly Streamlit interface
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `Plotly` · `Streamlit`
+
+### 🔗 Try It Live
+
+👉 **[Weather Intelligence Dashboard](https://shreya-weather-intelligence.streamlit.app/)**
+
+📁 [`Weather_Analytics`](./Weather_Analytics)
+
+---
+
+## 👥 02 — Employee Performance Intelligence
+
+> **Understanding the workforce through performance, attendance, and departmental analytics.**
+
+An interactive workforce analytics dashboard designed to explore employee performance data and turn it into actionable insights.
+
+The application allows users to dynamically filter and analyze employee information instead of relying on static reports.
+
+### ✨ Highlights
+
+- 🔎 Interactive department filters
+- 📊 Performance score analysis
+- 📈 Attendance range analysis
+- 🎯 Dynamic KPI metrics
+- 🏢 Department-wise comparisons
+- 🏆 Top performer identification
+- ⚠️ Low-attendance monitoring
+- 📋 Employee-level data exploration
+- 📥 Downloadable filtered reports
+- 📈 Interactive Plotly visualizations
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `Plotly` · `Streamlit`
+
+### 🔗 Try It Live
+
+👉 **[Employee Performance Intelligence](https://shreya-employee-analytics.streamlit.app/)**
+
+📁 [`Employees_Perfromance_Analytics`](./Employees_Perfromance_Analytics)
+
+---
+
+## 🛡️ 03 — Fraud Detection & Transaction Analysis System
+
+> **Finding suspicious patterns in financial transactions through analytics, anomaly indicators, and risk scoring.**
+
+The most advanced project in this collection so far.
+
+This project analyzes transaction data to identify potentially suspicious activity using multiple analytical signals. It combines data processing, transaction monitoring, rule-based detection, risk scoring, visualization, and an interactive dashboard.
+
+### ✨ Highlights
+
+- 🔁 Duplicate transaction detection
+- 💰 High-value transaction identification
+- 👤 Suspicious account analysis
+- 🔄 Frequent transaction monitoring
+- ⚠️ Suspicious transaction detection
+- 🎯 Transaction-level risk scoring
+- 📊 Transaction category analysis
+- 📈 Daily transaction trends
+- 🏆 Top 10 highest-value transactions
+- 🔎 Interactive search and filters
+- 📥 Suspicious transaction export
+- 🖥️ Interactive analytics dashboard
+
+### 🧠 Risk Intelligence Workflow
+
+```text
+Transaction Data
+       │
+       ▼
+Data Cleaning & Preparation
+       │
+       ▼
+Duplicate Detection ────────┐
+High-Value Detection ───────┤
+Frequent Activity Analysis ─┤
+Transaction Pattern Checks ─┤
+                             ▼
+                        Risk Scoring
+                             │
+                             ▼
+              Suspicious Transaction Detection
+                             │
+                             ▼
+                  Interactive Investigation
+````
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `Matplotlib` · `Plotly` · `Streamlit`
+
+### 🔗 Try It Live
+
+👉 **[Fraud Detection Intelligence](https://shreya-fraud-detection-intelligence.streamlit.app/)**
+
+📁 [`Fraud_Detection_And_Transaction_Analysis_System`](./Fraud_Detection_And_Transaction_Analysis_System)
+
+---
+
+# 🧰 My Analytics Toolkit
+
+<div align="center">
+
+| Area                              | Technologies              |
+| --------------------------------- | ------------------------- |
+| 🐍 **Programming**                | Python                    |
+| 📊 **Data Analysis**              | Pandas, NumPy             |
+| 📈 **Visualization**              | Matplotlib, Plotly        |
+| 🖥️ **Interactive Applications**  | Streamlit                 |
+| 📓 **Analysis & Experimentation** | Jupyter Notebook          |
+| 🔧 **Development**                | VS Code                   |
+| 🌐 **Version Control**            | Git & GitHub              |
+| 🚀 **Deployment**                 | Streamlit Community Cloud |
+
+</div>
+
+---
+
+# 🔄 From Data to Deployment
+
+Each project represents an end-to-end analytics workflow:
+
+```text
+┌──────────────┐
+│   RAW DATA   │
+└──────┬───────┘
+       ▼
+┌──────────────────────┐
+│ CLEAN & PREPARE DATA │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
+│ EXPLORE & UNDERSTAND │
+│      THE DATA        │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
+│ FIND PATTERNS &      │
+│ GENERATE INSIGHTS    │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
+│ VISUALIZE THE STORY  │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
+│ BUILD AN INTERACTIVE │
+│     APPLICATION      │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
+│       DEPLOY 🚀      │
+└──────────────────────┘
+```
+
+The objective is not simply to produce charts.
+
+It is to build something where data can be **explored, questioned, understood, and used**.
+
+---
+
+# 📂 Repository Structure
 
 ```text
 Streamlit-Analytics-Projects/
 │
-├── Weather_Analytics/
-│   ├── README.md
-│   ├── requirements.txt
+├── 🌦️ Weather_Analytics/
 │   ├── streamlit_dashboard.py
-│   └── ...
+│   ├── requirements.txt
+│   ├── weather_data.csv
+│   └── README.md
 │
-├── Employees_Perfromance_Analytics/
-│   ├── README.md
-│   ├── requirements.txt
+├── 👥 Employees_Perfromance_Analytics/
 │   ├── streamlit_dashboard.py
+│   ├── requirements.txt
 │   ├── employees_performance_dataset.csv
-│   └── ...
+│   └── README.md
 │
+├── 🛡️ Fraud_Detection_And_Transaction_Analysis_System/
+│   ├── streamlit_dashboard.py
+│   ├── fraud_detection_analysis.py
+│   ├── fraud_detection_analysis.ipynb
+│   ├── transactions_dataset.csv
+│   ├── suspicious_transactions.csv
+│   ├── transaction_category_chart.png
+│   ├── daily_transaction_trend.png
+│   ├── top_10_transactions.png
+│   ├── requirements.txt
+│   └── README.md
+│
+├── .gitignore
 └── README.md
-````
-
----
-
-## 💻 Run Any Project Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Shreya934-bot/Streamlit-Analytics-Projects.git
-```
-
-### 2. Navigate to the required project
-
-```bash
-cd Streamlit-Analytics-Projects
-```
-
-Then open the folder of the project you want to run.
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Streamlit application
-
-```bash
-streamlit run streamlit_dashboard.py
 ```
 
 ---
 
-## 🎯 Purpose of This Repository
+# 💡 What This Repository Demonstrates
 
-This repository serves as a growing collection of my **data analytics, data visualization, and interactive dashboard projects**.
+Through these projects, I am building practical experience in:
 
-The goal is to explore real-world datasets and build applications that can:
-
-* Transform raw data into actionable insights
-* Present analytics through interactive visualizations
-* Allow users to explore data dynamically
-* Demonstrate practical Python and data analysis skills
-* Build and deploy real-world analytics applications
-
-More projects will be added as I continue building and exploring the field of **Data Analytics, Machine Learning, and Artificial Intelligence**.
-
----
-
-## 👩‍💻 Author
-
-**Shreya Verma**
-
-B.Tech Computer Science Engineering
-Specialization in Artificial Intelligence & Machine Learning
-
-🔗 GitHub: [Shreya934-bot](https://github.com/Shreya934-bot)
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis
+* Feature Engineering
+* Statistical Analysis
+* Data Visualization
+* Interactive Dashboard Development
+* Workforce Analytics
+* Weather & Trend Analysis
+* Transaction Analytics
+* Rule-Based Fraud Detection
+* Risk Scoring
+* Anomaly Detection
+* Python Application Development
+* Data Export Pipelines
+* Cloud Deployment
+* Git & GitHub Workflows
 
 ---
 
-⭐ If you find these projects interesting, feel free to explore the dashboards and repositories!
+# 🎯 My Approach to Building
 
+I enjoy taking a problem and working through the entire journey:
+
+```text
+Understand the Problem
+        ↓
+Understand the Data
+        ↓
+Ask Better Questions
+        ↓
+Find Patterns
+        ↓
+Build the Analysis
+        ↓
+Create the Experience
+        ↓
+Deploy It
 ```
+
+For me, the best projects sit at the intersection of:
+
+### **📊 Data + 🧠 Intelligence + 🖥️ Usability**
+
+Because an insight becomes more valuable when people can actually interact with it.
+
+---
+
+# 🌱 What's Next?
+
+This repository will continue to evolve as I build more ambitious projects in:
+
+* 🤖 Machine Learning
+* 🔮 Predictive Analytics
+* 📈 Forecasting
+* 🧠 Advanced Anomaly Detection
+* 📊 Business Intelligence
+* 🔗 Database-Driven Applications
+* ⚙️ Automated Data Pipelines
+* ☁️ Cloud-Based Analytics
+* 🚀 End-to-End ML Systems
+
+**More datasets. More questions. Better projects.**
+
+---
+
+# 👩‍💻 About Me
+
+## Shreya Verma
+
+**B.Tech Computer Science Engineering**
+**Specialization: Artificial Intelligence & Machine Learning**
+
+I am passionate about building practical, intelligent, and data-driven solutions.
+
+My interests include:
+
+**Machine Learning** · **Data Analytics** · **Artificial Intelligence** · **Predictive Modeling** · **Data Visualization** · **Interactive Applications**
+
+I believe the best way to learn is to build.
+
+So this repository is more than a collection of code—it's a record of my journey of:
+
+> ### **Learning → Building → Analyzing → Improving → Deploying**
+
+---
+
+<div align="center">
+
+## ⭐ Explore. Interact. Learn.
+
+If you find these projects interesting, feel free to explore the live dashboards and browse the source code.
+
+### **One dataset. One problem. One better solution at a time. 🚀**
+
+<br>
+
+Made with 💻, ☕, curiosity, and lots of Python
+
+### **Shreya Verma**
+
+[GitHub](https://github.com/Shreya934-bot) · [Explore this Repository](https://github.com/Shreya934-bot/Streamlit-Analytics-Projects)
+
+</div>
+```
+
+
 
