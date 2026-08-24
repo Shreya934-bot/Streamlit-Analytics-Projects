@@ -1,8 +1,4 @@
-Yes. I checked the actual repository structure and current README. It now has all three project folders—**Weather Analytics, Employee Performance Analytics, and Fraud Detection & Transaction Analysis**—but the current root README only properly showcases the first two. ([GitHub][1])
 
-I would replace the entire root `README.md` with this. It is more polished, recruiter-friendly, personal, and gives the repository a proper **Shreya Verma portfolio brand**.
-
-````md
 <div align="center">
 
 # 📊 Shreya's Analytics Lab
