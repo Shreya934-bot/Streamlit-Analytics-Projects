@@ -11,7 +11,7 @@
 
 ## 🌐 Live Demo
 
-### 🚀 **[Open the Fraud Detection Dashboard](YOUR_STREAMLIT_APP_URL_HERE)**
+### 🚀 **[Open the Fraud Detection Dashboard]https://shreya-fraud-detection-dashboard.streamlit.app/**
 
 > Replace `YOUR_STREAMLIT_APP_URL_HERE` with your deployed Streamlit Cloud URL after deployment.
 
