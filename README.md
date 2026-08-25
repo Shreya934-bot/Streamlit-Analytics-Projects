@@ -1,23 +1,23 @@
-
 <div align="center">
 
 # 📊 Shreya's Analytics Lab
 
 ### Turning Data into Insights. Insights into Interactive Experiences.
 
-**A growing collection of end-to-end Data Analytics, Visualization, and Intelligent Application projects built by Shreya Verma.**
+**A growing collection of end-to-end Data Analytics, Visualization, Machine Learning, and Intelligent Application projects built by Shreya Verma.**
 
 <br>
 
-[![Python](https://img.shields.io/badge/Python-Data%20Analytics-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-Data%20Analytics%20%26%20ML-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Interactive%20Apps-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Visualizations-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shreya934-bot/Streamlit-Analytics-Projects)
 
 <br>
 
-**Python • Data Analytics • Visualization • Streamlit • Machine Learning**
+**Python • Data Analytics • Visualization • Streamlit • Machine Learning • NLP**
 
 </div>
 
@@ -25,27 +25,28 @@
 
 ## 👋 Welcome
 
-Welcome to my **Analytics Lab** — a collection of hands-on projects where I explore data, uncover patterns, build meaningful visualizations, and transform analysis into interactive applications.
+Welcome to my **Analytics Lab** — a collection of hands-on projects where I explore data, uncover patterns, build meaningful visualizations, develop intelligent models, and transform analysis into interactive applications.
 
-This repository represents my journey of moving beyond notebooks and static charts to building **end-to-end analytics experiences**.
+This repository represents my journey of moving beyond notebooks and static charts to building **end-to-end analytics and AI experiences**.
 
 Every project follows a simple philosophy:
 
 > ### **Raw data is only the beginning. The real value comes from understanding it.**
 
-From cleaning datasets and discovering trends to designing dashboards and deploying them for anyone to explore, each project is an opportunity to turn data into something useful.
+From cleaning datasets and discovering trends to designing dashboards, building intelligent scoring systems, and deploying applications for anyone to explore, each project is an opportunity to turn data into something useful.
 
 ---
 
 # 🚀 Explore the Live Projects
 
-All three projects in this repository are deployed as interactive Streamlit applications.
+All four projects in this repository are deployed as interactive Streamlit applications.
 
 | # | Project | Focus | Live App |
 |:--:|---|---|---|
 | 🌦️ | **Weather Intelligence Dashboard** | Weather patterns, trends & exploration | [🚀 Launch App](https://shreya-weather-intelligence.streamlit.app/) |
 | 👥 | **Employee Performance Intelligence** | Performance, attendance & workforce insights | [🚀 Launch App](https://shreya-employee-analytics.streamlit.app/) |
 | 🛡️ | **Fraud Detection Intelligence** | Transaction analysis, suspicious activity & risk | [🚀 Launch App](https://shreya-fraud-detection-intelligence.streamlit.app/) |
+| 🤖 | **ResumeAI — Smart Candidate Screening** | AI-powered resume matching, ranking & shortlisting | [🚀 Launch App](https://shreya-ai-resume.streamlit.app/) |
 
 ---
 
@@ -115,7 +116,7 @@ The application allows users to dynamically filter and analyze employee informat
 
 > **Finding suspicious patterns in financial transactions through analytics, anomaly indicators, and risk scoring.**
 
-The most advanced project in this collection so far.
+The most advanced analytics project in this collection.
 
 This project analyzes transaction data to identify potentially suspicious activity using multiple analytical signals. It combines data processing, transaction monitoring, rule-based detection, risk scoring, visualization, and an interactive dashboard.
 
@@ -147,15 +148,15 @@ Duplicate Detection ────────┐
 High-Value Detection ───────┤
 Frequent Activity Analysis ─┤
 Transaction Pattern Checks ─┤
-                             ▼
+                            ▼
                         Risk Scoring
-                             │
-                             ▼
+                            │
+                            ▼
               Suspicious Transaction Detection
-                             │
-                             ▼
+                            │
+                            ▼
                   Interactive Investigation
-````
+```
 
 ### 🛠️ Built With
 
@@ -169,20 +170,104 @@ Transaction Pattern Checks ─┤
 
 ---
 
-# 🧰 My Analytics Toolkit
+## 🤖 04 — ResumeAI: Smart Candidate Screening
+
+> **Matching resumes against job requirements through intelligent scoring, skill-gap analysis, candidate ranking, and automated shortlisting.**
+
+**ResumeAI** is an intelligent candidate screening application that analyzes multiple candidate resumes and evaluates how well each profile matches a job description.
+
+The application extracts candidate information, compares skills and experience with role requirements, measures education and text similarity, calculates a weighted overall match score, ranks candidates, highlights missing skills, and exports shortlisted results.
+
+It moves the screening workflow beyond simple keyword matching into a transparent, multi-factor candidate evaluation experience.
+
+### ✨ Highlights
+
+- 📄 Upload multiple candidate resumes in **TXT** or **CSV** format
+- 🧠 Intelligent resume-to-job-description matching
+- 🎯 Weighted overall candidate match score
+- 🛠️ Skill compatibility analysis
+- 🧩 Missing skill / skill-gap detection
+- 💼 Experience compatibility scoring
+- 🎓 Education compatibility scoring
+- 📝 NLP-based text similarity
+- 🏆 Automatic candidate ranking
+- ⚡ Configurable shortlist threshold
+- ✅ Automated shortlisting
+- 📊 Detailed candidate analysis
+- 📥 Export shortlisted candidates to CSV
+- 🎨 Advanced branded Streamlit interface
+
+### 🧠 Candidate Intelligence Workflow
+
+```text
+Candidate Resumes + Job Description
+                │
+                ▼
+      Parse & Structure Candidate Data
+                │
+                ▼
+┌───────────────┼────────────────┬────────────────┐
+▼               ▼                ▼                ▼
+Skills       Experience       Education      NLP Text
+Match         Match            Match        Similarity
+└───────────────┬────────────────┴────────────────┘
+                ▼
+        Weighted Match Scoring
+                │
+                ▼
+      Candidate Ranking & Analysis
+                │
+                ▼
+      Skill Gap Identification
+                │
+                ▼
+      Automated Shortlisting
+                │
+                ▼
+        CSV Export & Insights
+```
+
+### 🧮 Scoring Approach
+
+ResumeAI combines multiple evaluation signals into a weighted final score:
+
+| Evaluation Signal | Weight |
+|---|:---:|
+| 🛠️ Skill Compatibility | **50%** |
+| 💼 Experience Compatibility | **25%** |
+| 🎓 Education Compatibility | **15%** |
+| 📝 NLP Text Similarity | **10%** |
+
+The final score is then used to rank candidates and determine whether they meet the selected shortlist threshold.
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `scikit-learn` · `Streamlit` · `NLP / Text Similarity`
+
+### 🔗 Try It Live
+
+👉 **[ResumeAI — Smart Candidate Screening](https://shreya-ai-resume.streamlit.app/)**
+
+📁 [`AI_Resume_Screening_Tool`](./AI_Resume_Screening_Tool)
+
+---
+
+# 🧰 My Analytics & AI Toolkit
 
 <div align="center">
 
-| Area                              | Technologies              |
-| --------------------------------- | ------------------------- |
-| 🐍 **Programming**                | Python                    |
-| 📊 **Data Analysis**              | Pandas, NumPy             |
-| 📈 **Visualization**              | Matplotlib, Plotly        |
-| 🖥️ **Interactive Applications**  | Streamlit                 |
-| 📓 **Analysis & Experimentation** | Jupyter Notebook          |
-| 🔧 **Development**                | VS Code                   |
-| 🌐 **Version Control**            | Git & GitHub              |
-| 🚀 **Deployment**                 | Streamlit Community Cloud |
+| Area | Technologies |
+| --- | --- |
+| 🐍 **Programming** | Python |
+| 📊 **Data Analysis** | Pandas, NumPy |
+| 📈 **Visualization** | Matplotlib, Plotly |
+| 🤖 **Machine Learning** | scikit-learn |
+| 🧠 **NLP & Text Analysis** | Text Similarity, Vectorization |
+| 🖥️ **Interactive Applications** | Streamlit |
+| 📓 **Analysis & Experimentation** | Jupyter Notebook |
+| 🔧 **Development** | VS Code |
+| 🌐 **Version Control** | Git & GitHub |
+| 🚀 **Deployment** | Streamlit Community Cloud |
 
 </div>
 
@@ -190,7 +275,7 @@ Transaction Pattern Checks ─┤
 
 # 🔄 From Data to Deployment
 
-Each project represents an end-to-end analytics workflow:
+Each project represents an end-to-end workflow:
 
 ```text
 ┌──────────────┐
@@ -212,6 +297,11 @@ Each project represents an end-to-end analytics workflow:
 └──────────┬───────────┘
            ▼
 ┌──────────────────────┐
+│ BUILD INTELLIGENCE & │
+│     SCORING LOGIC    │
+└──────────┬───────────┘
+           ▼
+┌──────────────────────┐
 │ VISUALIZE THE STORY  │
 └──────────┬───────────┘
            ▼
@@ -225,9 +315,9 @@ Each project represents an end-to-end analytics workflow:
 └──────────────────────┘
 ```
 
-The objective is not simply to produce charts.
+The objective is not simply to produce charts or models.
 
-It is to build something where data can be **explored, questioned, understood, and used**.
+It is to build something where data can be **explored, questioned, understood, scored, and used**.
 
 ---
 
@@ -260,6 +350,17 @@ Streamlit-Analytics-Projects/
 │   ├── requirements.txt
 │   └── README.md
 │
+├── 🤖 AI_Resume_Screening_Tool/
+│   ├── app.py
+│   ├── ai_resume_screening_tool.py
+│   ├── AI_Resume_Screening_Tool.ipynb
+│   ├── requirements.txt
+│   ├── sample_job_description.txt
+│   ├── candidate_1.txt ... candidate_5.txt
+│   ├── candidates.csv
+│   ├── shortlisted_candidates.csv
+│   └── README.md
+│
 ├── .gitignore
 └── README.md
 ```
@@ -282,6 +383,12 @@ Through these projects, I am building practical experience in:
 * Rule-Based Fraud Detection
 * Risk Scoring
 * Anomaly Detection
+* Machine Learning Workflows
+* NLP & Text Similarity
+* Resume Screening & Candidate Ranking
+* Multi-Factor Scoring Systems
+* Automated Shortlisting
+* Skill Gap Analysis
 * Python Application Development
 * Data Export Pipelines
 * Cloud Deployment
@@ -303,6 +410,8 @@ Ask Better Questions
 Find Patterns
         ↓
 Build the Analysis
+        ↓
+Add Intelligence
         ↓
 Create the Experience
         ↓
@@ -330,6 +439,7 @@ This repository will continue to evolve as I build more ambitious projects in:
 * ⚙️ Automated Data Pipelines
 * ☁️ Cloud-Based Analytics
 * 🚀 End-to-End ML Systems
+* 🧩 Intelligent Decision-Support Applications
 
 **More datasets. More questions. Better projects.**
 
@@ -339,14 +449,14 @@ This repository will continue to evolve as I build more ambitious projects in:
 
 ## Shreya Verma
 
-**B.Tech Computer Science Engineering**
+**B.Tech Computer Science Engineering**  
 **Specialization: Artificial Intelligence & Machine Learning**
 
 I am passionate about building practical, intelligent, and data-driven solutions.
 
 My interests include:
 
-**Machine Learning** · **Data Analytics** · **Artificial Intelligence** · **Predictive Modeling** · **Data Visualization** · **Interactive Applications**
+**Machine Learning** · **Data Analytics** · **Artificial Intelligence** · **Predictive Modeling** · **Data Visualization** · **NLP** · **Interactive Applications**
 
 I believe the best way to learn is to build.
 
@@ -373,7 +483,3 @@ Made with 💻, ☕, curiosity, and lots of Python
 [GitHub](https://github.com/Shreya934-bot) · [Explore this Repository](https://github.com/Shreya934-bot/Streamlit-Analytics-Projects)
 
 </div>
-```
-
-
-
