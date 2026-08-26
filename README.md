@@ -39,7 +39,7 @@ From cleaning datasets and discovering trends to designing dashboards, building 
 
 # 🚀 Explore the Live Projects
 
-All four projects in this repository are deployed as interactive Streamlit applications.
+All five projects in this repository are deployed as interactive Streamlit applications.
 
 | # | Project | Focus | Live App |
 |:--:|---|---|---|
@@ -47,6 +47,7 @@ All four projects in this repository are deployed as interactive Streamlit appli
 | 👥 | **Employee Performance Intelligence** | Performance, attendance & workforce insights | [🚀 Launch App](https://shreya-employee-analytics.streamlit.app/) |
 | 🛡️ | **Fraud Detection Intelligence** | Transaction analysis, suspicious activity & risk | [🚀 Launch App](https://shreya-fraud-detection-intelligence.streamlit.app/) |
 | 🤖 | **ResumeAI — Smart Candidate Screening** | AI-powered resume matching, ranking & shortlisting | [🚀 Launch App](https://shreya-ai-resume.streamlit.app/) |
+| 📡 | **SocialPulse — Social Media Trend Intelligence** | Hashtag trends, engagement, sentiment & content intelligence | [🚀 Launch App](https://social-pulse-ai.streamlit.app/) |
 
 ---
 
@@ -252,6 +253,71 @@ The final score is then used to rank candidates and determine whether they meet 
 
 ---
 
+## 📡 05 — SocialPulse: Social Media Trend Intelligence
+
+> **Turning social conversations into trends, engagement signals, and actionable intelligence.**
+
+**SocialPulse** is an interactive social media analytics application designed to transform raw post data into a clear intelligence workspace for exploring what people are talking about, how audiences are engaging, and when activity peaks.
+
+The application analyzes hashtags, user activity, engagement, posting behavior, content categories, and sentiment to surface meaningful patterns from social media data. Instead of static charts alone, SocialPulse brings the analysis together in an interactive, branded Streamlit experience built for exploration.
+
+### ✨ Highlights
+
+- 🔥 Top trending hashtag discovery
+- 👤 Most active user analysis
+- ❤️ Engagement analysis across likes, comments, and shares
+- 📈 Daily engagement trend tracking
+- 🕒 Popular posting-time analysis
+- 🥧 Content category distribution
+- 😊 Sentiment analysis across Positive, Neutral, and Negative posts
+- 🔎 Interactive search and filtering
+- 📊 Dynamic analytics visualizations
+- 📁 Upload and analyze custom CSV datasets
+- 🧪 Built-in demo dataset for instant exploration
+- 📥 Exportable analytics report
+- 🖼️ Downloadable chart outputs
+- 🎨 Advanced SocialPulse branded interface
+
+### 🧠 Social Intelligence Workflow
+
+```text
+Social Media Post Data
+          │
+          ▼
+   Data Loading & Cleaning
+          │
+          ▼
+┌─────────┼──────────┬────────────┬───────────────┐
+▼         ▼          ▼            ▼               ▼
+Hashtags  Users   Engagement   Posting Time   Content Type
+▼         ▼          ▼            ▼               ▼
+Trend     Activity   Signals      Patterns      Distribution
+ Analysis  Analysis
+          │
+          └───────────────┬───────────────────────┐
+                          ▼
+                   Sentiment Analysis
+                          │
+                          ▼
+                Interactive Exploration
+                          │
+                          ▼
+              Insights, Charts & CSV Export
+```
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `NumPy` · `Plotly` · `Matplotlib` · `Streamlit` · `NLP / Sentiment Analysis`
+
+### 🔗 Try It Live
+
+👉 **[SocialPulse — Social Media Trend Intelligence](https://social-pulse-ai.streamlit.app/)**
+
+📁 [`Social_Media_Trend_Analyzer`](./Social_Media_Trend_Analyzer)
+
+
+---
+
 # 🧰 My Analytics & AI Toolkit
 
 <div align="center">
@@ -262,7 +328,7 @@ The final score is then used to rank candidates and determine whether they meet 
 | 📊 **Data Analysis** | Pandas, NumPy |
 | 📈 **Visualization** | Matplotlib, Plotly |
 | 🤖 **Machine Learning** | scikit-learn |
-| 🧠 **NLP & Text Analysis** | Text Similarity, Vectorization |
+| 🧠 **NLP & Text Analysis** | Text Similarity, Vectorization, Sentiment Analysis |
 | 🖥️ **Interactive Applications** | Streamlit |
 | 📓 **Analysis & Experimentation** | Jupyter Notebook |
 | 🔧 **Development** | VS Code |
@@ -361,6 +427,19 @@ Streamlit-Analytics-Projects/
 │   ├── shortlisted_candidates.csv
 │   └── README.md
 │
+├── 📡 Social_Media_Trend_Analyzer/
+│   ├── app.py
+│   ├── social_media_trend_analyzer.py
+│   ├── social_media_trend_analyzer.ipynb
+│   ├── social_media_posts.csv
+│   ├── social_media_analytics_report.csv
+│   ├── top_hashtags_chart.png
+│   ├── daily_engagement_trend.png
+│   ├── content_category_distribution.png
+│   ├── sentiment_distribution.png
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── .gitignore
 └── README.md
 ```
@@ -389,6 +468,11 @@ Through these projects, I am building practical experience in:
 * Multi-Factor Scoring Systems
 * Automated Shortlisting
 * Skill Gap Analysis
+* Social Media Analytics
+* Trend & Hashtag Analysis
+* Engagement Analytics
+* Sentiment Analysis
+* Content Intelligence
 * Python Application Development
 * Data Export Pipelines
 * Cloud Deployment
@@ -433,6 +517,7 @@ This repository will continue to evolve as I build more ambitious projects in:
 * 🤖 Machine Learning
 * 🔮 Predictive Analytics
 * 📈 Forecasting
+* 📡 Social & Behavioral Analytics
 * 🧠 Advanced Anomaly Detection
 * 📊 Business Intelligence
 * 🔗 Database-Driven Applications
