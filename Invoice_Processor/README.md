@@ -1,158 +1,354 @@
-# 🧾 Automated Invoice Processing System
+# 🧾 Invoice Intelligence
 
-## 📌 Day 30 – RFT Python Internship | Final Day
+<p align="center">
+  <strong>Turn invoice files into structured financial records, payment-status insights, and export-ready reports.</strong>
+</p>
 
-### 🎯 Task Overview
-
-Built an **Automated Invoice Processing System** that reads invoice data from CSV and text-based PDF files, extracts important invoice fields, calculates totals, identifies overdue invoices, generates consolidated reports, and provides a branded Streamlit interface.
+<p align="center">
+  <a href="https://sv-invoice-intelligence.streamlit.app/">🚀 Live Demo</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/Shreya934-bot/Streamlit-Analytics-Projects/tree/main/Invoice_Processor">📦 Repository</a>
+</p>
 
 ---
 
-## 💡 Tasks Completed
+## ✨ Overview
 
-### 📂 Invoice Data Processing
-- Read invoice data from CSV files
-- Read text-based invoice data from PDF files
-- Validate required invoice fields
-- Clean invoice dates and monetary values
-- Consolidate multiple item rows into invoice-level records
+**Invoice Intelligence** is an interactive document-processing and financial analytics application built with Python, Pandas, NumPy, Plotly, Streamlit, pypdf, and ReportLab.
+
+It transforms invoice data from **CSV files or text-based PDF invoices** into structured records and turns those records into useful operational insights.
+
+**Invoice Files → Extraction → Validation → Consolidation → Payment Analysis → Reporting**
+
+---
+
+## 🎯 Core Capabilities
+
+### 📂 Multi-Source Invoice Ingestion
+- CSV invoice datasets
+- One or more text-based PDF invoices
+- Required-field validation
+- Date and monetary-value cleaning
+- Invoice-line consolidation
 
 ### 🧾 Invoice Information Extraction
-- Invoice Number
-- Customer Name
-- Customer Email
-- Invoice Date
-- Due Date
-- Item Details
-- Quantity
-- Unit Price
-- Line Amount
-- Invoice Total
 
-### 🚨 Overdue Invoice Detection
+| Field | Purpose |
+|---|---|
+| Invoice Number | Unique invoice identification |
+| Customer Name | Customer-level reporting |
+| Customer Email | Contact information |
+| Invoice Date | Invoice timeline |
+| Due Date | Payment deadline |
+| Item | Product/service description |
+| Quantity | Item quantity |
+| Unit Price | Per-unit value |
+| Line Amount | Item-level value |
+| Invoice Total | Total invoice value |
+
+### 🚨 Payment & Overdue Intelligence
 - Current vs overdue classification
-- Days overdue calculation
-- Total overdue amount
-- Selected as-of date for monitoring
+- Days-overdue calculation
+- Total overdue value
+- Selected as-of date
+- Payment-status monitoring
+- Searchable invoice records
 
-### 📊 Consolidated Reporting
-- Consolidated invoice report
-- Overdue invoice report
-- Automated summary report
-- CSV export
-
-## ⭐ Bonus Challenge
-
-### 📄 Automated PDF Invoice Extraction
-Text-based PDF invoices are processed automatically using `pypdf`.
-
-> Scanned/image-only PDFs require OCR and are outside this lightweight text-PDF implementation.
-
-### 🖥️ Streamlit Interface
-The branded **SV / Shreya Verma** dashboard includes:
-- CSV upload
-- Multiple PDF upload
-- KPI cards
-- Monthly invoice value chart
-- Top customer chart
-- Payment status distribution
+### 📊 Interactive Analytics
+- Monthly invoice value
+- Top customers
+- Payment-status distribution
 - Invoice value trend
-- Overdue monitor
-- Invoice search
-- CSV report downloads
+- Overdue monitoring
+- Invoice search and filtering
+- KPI cards
+- Downloadable reports
 
-## 🛠️ Technologies Used
+---
 
-- Python
-- Pandas
-- NumPy
-- Plotly
-- Streamlit
-- pypdf
-- ReportLab
-- Jupyter Notebook
-
-## 📂 Project Structure
+## 🔄 Processing Workflow
 
 ```text
-Day30/
-├── invoice_processor.py
+Invoice Input
+CSV / Text-based PDF
+        ↓
+File Validation
+        ↓
+Data Extraction
+Fields + Line Items
+        ↓
+Cleaning & Normalization
+        ↓
+Invoice Consolidation
+        ↓
+Payment / Overdue Analysis
+        ↓
+Charts + Tables + CSV Reports
+```
+
+---
+
+## 🧠 Application Architecture
+
+```text
+                 ┌──────────────────────┐
+                 │     Streamlit UI     │
+                 │ Upload / Filters     │
+                 └──────────┬───────────┘
+                            │
+             ┌──────────────┴──────────────┐
+             ▼                             ▼
+      ┌───────────────┐             ┌───────────────┐
+      │ CSV Processing│             │ PDF Extraction │
+      │    Pandas     │             │     pypdf      │
+      └───────┬───────┘             └───────┬───────┘
+              └──────────────┬──────────────┘
+                             ▼
+                    ┌──────────────────┐
+                    │ Clean + Validate │
+                    └────────┬─────────┘
+                             ▼
+                    ┌──────────────────┐
+                    │ Consolidate Data │
+                    │ + Calculations   │
+                    └────────┬─────────┘
+                             ▼
+              ┌──────────────┴──────────────┐
+              ▼                             ▼
+       Plotly Analytics                CSV Reports
+```
+
+---
+
+## 📥 Expected CSV Structure
+
+Required fields:
+
+```text
+Invoice Number
+Customer Name
+Invoice Date
+```
+
+Optional fields can include:
+
+```text
+Customer Email
+Due Date
+Item
+Quantity
+Unit Price
+Amount
+Tax
+```
+
+A sample dataset is included as `sample_invoices.csv`.
+
+---
+
+## 📤 Generated Reports
+
+The workflow produces export-ready CSV outputs including:
+
+- `consolidated_invoice_report.csv`
+- `overdue_invoices.csv`
+- `invoice_summary_report.csv`
+
+These reports can be reused for spreadsheet analysis, operational reporting, or downstream data workflows.
+
+---
+
+## 📁 Project Structure
+
+```text
+Invoice_Processor/
+│
 ├── app.py
+├── invoice_processor.py
 ├── Invoice_Processor.ipynb
 ├── requirements.txt
 ├── README.md
+│
 ├── sample_invoices.csv
+│
 ├── invoices/
 │   ├── sample_invoice_001.pdf
 │   ├── sample_invoice_002.pdf
 │   └── sample_invoice_003.pdf
+│
 └── reports/
     ├── consolidated_invoice_report.csv
     ├── overdue_invoices.csv
     └── invoice_summary_report.csv
 ```
 
-## 📚 Concepts Practiced
+| File / Folder | Responsibility |
+|---|---|
+| `app.py` | Streamlit dashboard |
+| `invoice_processor.py` | Core processing and analytics |
+| `Invoice_Processor.ipynb` | Notebook implementation |
+| `sample_invoices.csv` | Example invoice dataset |
+| `invoices/` | Sample PDF invoices |
+| `reports/` | Generated CSV reports |
+| `requirements.txt` | Project dependencies |
 
-* CSV Processing
-* PDF Text Extraction
-* Data Validation
-* Data Cleaning
-* Date Parsing
-* Monetary Data Processing
-* GroupBy and Aggregation
-* Invoice Consolidation
-* Customer Detail Extraction
-* Item-Level Extraction
-* Total Calculation
-* Overdue Detection
-* Days Overdue Calculation
-* Financial Reporting
-* CSV Export
-* Data Visualization
-* Streamlit
-* Plotly
-* Jupyter Notebook
-* File Upload Handling
-* Search and Filtering
+---
 
-## 🎯 Key Learning Outcomes
+## 🛠️ Technology Stack
 
-Through this project, I practiced how to:
+| Technology | Role |
+|---|---|
+| **Python** | Application logic |
+| **Pandas** | Data processing and aggregation |
+| **NumPy** | Numerical operations |
+| **Plotly** | Interactive visualization |
+| **Streamlit** | Web application |
+| **pypdf** | Text-based PDF extraction |
+| **ReportLab** | Report/document generation |
+| **Jupyter** | Notebook workflow |
 
-* Process structured invoice datasets
-* Extract information from text-based PDF documents
-* Validate and clean financial records
-* Calculate invoice totals
-* Consolidate invoice line items
-* Identify overdue invoices
-* Generate automated financial reports
-* Build interactive financial visualizations
-* Create searchable invoice dashboards
-* Export processed data as CSV
-* Build an end-to-end document-processing workflow
+---
 
-## ✅ Task Completion Status
+## 🚀 Run Locally
 
-* [x] Read invoice data from CSV
-* [x] Read invoice data from PDF
-* [x] Extract Invoice Number
-* [x] Extract Customer Details
-* [x] Extract Invoice Date
-* [x] Extract Due Date
-* [x] Extract Item & Price Details
-* [x] Calculate Total Amount
-* [x] Identify Overdue Invoices
-* [x] Generate Consolidated Invoice Report
-* [x] Export Final Report as CSV
-* [x] Automate PDF Invoice Extraction
-* [x] Generate Automated Summary Report
-* [x] Create Streamlit Interface
-* [x] Add Search and Filtering
-* [x] Create Jupyter Notebook Implementation
+```bash
+git clone https://github.com/Shreya934-bot/Streamlit-Analytics-Projects.git
+cd Streamlit-Analytics-Projects/Invoice_Processor
+```
 
-## 🎉 Day 30 Completed
+Create and activate a virtual environment:
 
-This project completes the **final Day of the RFT Python Internship**, combining document extraction, financial calculations, overdue detection, reporting, visualization, and dashboard development into one practical workflow.
+```bash
+python -m venv .venv
+```
 
-**Final Day. Final Project. 🚀🧾**
+Windows:
+
+```powershell
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🌐 Live Application
+
+### 🚀 Invoice Intelligence
+
+**Live Demo:**  
+https://sv-invoice-intelligence.streamlit.app/
+
+The deployed application provides the CSV/PDF processing workflow through a browser-based Streamlit interface.
+
+---
+
+## 🔐 Data Handling
+
+The application is designed around files supplied by the user through the interface.
+
+For real financial documents, use appropriate organizational privacy and security controls. The included sample files are intended for demonstration and testing.
+
+---
+
+## 📚 Concepts Demonstrated
+
+- CSV processing
+- PDF text extraction
+- File upload handling
+- Data validation
+- Data cleaning
+- Date parsing
+- Monetary-value processing
+- GroupBy aggregation
+- Invoice consolidation
+- Customer analysis
+- Item-level extraction
+- Invoice total calculation
+- Payment-status classification
+- Days-overdue calculation
+- Financial reporting
+- CSV export
+- Interactive visualization
+- Search and filtering
+- Streamlit application development
+
+---
+
+## 💡 Why This Project Matters
+
+Invoices are more than documents: they contain structured operational and financial information.
+
+This project demonstrates an end-to-end approach:
+
+```text
+Raw Invoice Files
+       ↓
+Information Extraction
+       ↓
+Validated Data
+       ↓
+Financial Metrics
+       ↓
+Payment Signals
+       ↓
+Actionable Reports
+```
+
+The application combines **document processing, financial analytics, visualization, and interactive application development** in one workflow.
+
+---
+
+## 🔮 Potential Extensions
+
+- OCR for scanned invoices
+- More robust invoice-template detection
+- Vendor-level analytics
+- Customer payment-history analysis
+- Payment reminders
+- Email integration
+- Duplicate invoice detection
+- Anomaly detection
+- Tax/GST analytics
+- Database-backed invoice storage
+- Authentication and role-based access
+- Automated scheduled reporting
+- API-based invoice ingestion
+
+---
+
+## ⚠️ Scope & Limitations
+
+The current extraction pipeline is designed for **text-based PDF invoices**. Scanned or image-only PDFs require OCR and are outside the current lightweight `pypdf` implementation.
+
+PDF extraction can also vary with different invoice layouts and document structures.
+
+---
+
+## 👩‍💻 Author
+
+**Shreya Verma**  
+Data • ML • Analytics
+
+---
+
+## ⭐ Project Links
+
+- 🚀 [Live Application](https://sv-invoice-intelligence.streamlit.app/)
+- 📦 [GitHub Repository](https://github.com/Shreya934-bot/Streamlit-Analytics-Projects/tree/main/Invoice_Processor)
+
+---
+
+<p align="center">
+  <strong>Invoice files in. Structured financial insight out. 🧾📊</strong>
+</p>
