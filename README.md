@@ -39,7 +39,7 @@ From cleaning datasets and discovering trends to designing dashboards, building 
 
 # 🚀 Explore the Live Projects
 
-All six projects in this repository are deployed as interactive Streamlit applications.
+All seven projects in this repository are deployed as interactive Streamlit applications.
 
 | # | Project | Focus | Live App |
 |:--:|---|---|---|
@@ -49,6 +49,7 @@ All six projects in this repository are deployed as interactive Streamlit applic
 | 🤖 | **ResumeAI — Smart Candidate Screening** | AI-powered resume matching, ranking & shortlisting | [🚀 Launch App](https://shreya-ai-resume.streamlit.app/) |
 | 📡 | **SocialPulse — Social Media Trend Intelligence** | Hashtag trends, engagement, sentiment & content intelligence | [🚀 Launch App](https://social-pulse-ai.streamlit.app/) |
 | 📈 | **Portfolio Intelligence Analyzer** | Portfolio performance, allocation, risk & momentum analytics | [🚀 Launch App](https://sv-portfolio-analyzer.streamlit.app/) |
+| 💰 | **Smart Expense Tracker & Budget Analyzer** | Spending intelligence, budgeting, savings & trend analysis | [🚀 Launch App](https://sv-expense-tracker.streamlit.app/) |
 
 ---
 
@@ -402,6 +403,86 @@ The application brings several analytical perspectives together:
 
 ---
 
+## 💰 07 — Smart Expense Tracker & Budget Analyzer
+
+> **Turning raw expense records into spending intelligence, budget visibility, savings insights, and trend-based forecasts.**
+
+**Smart Expense Tracker & Budget Analyzer** is an interactive financial analytics application designed to help users understand where their money goes, how spending compares with budget expectations, and how recent spending trends may evolve.
+
+The application accepts expense CSV data, validates and cleans the records, automatically categorizes transactions, calculates spending and savings metrics, compares actual spending against category budgets, visualizes spending behavior, and provides a simple trend-based estimate for the following month.
+
+### ✨ Highlights
+
+- 📥 Upload and analyze custom expense CSV datasets
+- 🧹 Data validation and cleaning pipeline
+- 🏷️ Automatic expense categorization
+- 💰 Total spending and savings analysis
+- 📊 Savings-rate calculation
+- 🎯 Category-level budget monitoring
+- ⚠️ Over-budget detection and alerts
+- 📈 Monthly spending trend analysis
+- 📅 Daily and weekday spending analysis
+- 🥧 Category spending distribution
+- 🔎 Transaction search and filtering
+- 📊 Interactive Plotly visualizations
+- 🔮 Simple next-month expense trend estimate
+- 📥 Downloadable analytical reports
+- 🎨 Branded Streamlit dashboard
+- 🚀 Deployed on Streamlit Community Cloud
+
+### 🧠 Expense Intelligence Workflow
+
+```text
+Expense CSV Data
+        │
+        ▼
+Data Validation & Cleaning
+        │
+        ▼
+Transaction Categorization
+        │
+        ├──────────────┬──────────────┬──────────────┐
+        ▼              ▼              ▼              ▼
+   Spending         Budget         Savings        Time-Series
+   Analysis         Analysis       Analysis        Analysis
+        │              │              │              │
+        └──────────────┴──────────────┴──────────────┘
+                       │
+                       ▼
+                Trend Estimation
+                       │
+                       ▼
+             Interactive Dashboard
+                       │
+                       ▼
+                Reports & Export
+```
+
+### 🧮 Financial Analytics
+
+| Area | Analysis |
+|---|---|
+| 💰 Spending | Total, average and largest expenses |
+| 🏷️ Categories | Automatic categorization and category summaries |
+| 🎯 Budget | Actual vs budget, variance and utilization |
+| 💵 Savings | Income, savings and savings rate |
+| 📅 Trends | Monthly, daily and weekday spending patterns |
+| 🔮 Forecasting | Simple linear trend-based next-month estimate |
+| 📑 Reporting | Cleaned data and analytical CSV exports |
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `NumPy` · `Plotly` · `Matplotlib` · `Streamlit`
+
+### 🔗 Try It Live
+
+👉 **[Smart Expense Tracker & Budget Analyzer](https://sv-expense-tracker.streamlit.app/)**
+
+📁 [`Expense_Tracker`](./Expense_Tracker)
+
+
+---
+
 # 🧰 My Analytics & AI Toolkit
 
 <div align="center">
@@ -534,6 +615,16 @@ Streamlit-Analytics-Projects/
 │   ├── requirements.txt
 │   └── README.md
 │
+├── 💰 Expense_Tracker/
+│   ├── app.py
+│   ├── expense_tracker.py
+│   ├── expense_tracker.ipynb
+│   ├── sample_expenses.csv
+│   ├── reports/
+│   ├── charts/
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── .gitignore
 └── README.md
 ```
@@ -572,6 +663,10 @@ Through these projects, I am building practical experience in:
 * Risk & Drawdown Analysis
 * Sector Allocation Analysis
 * Momentum & Moving-Average Analysis
+* Expense & Spending Analytics
+* Budget & Savings Analysis
+* Time-Series Spending Analysis
+* Trend-Based Forecasting
 * Python Application Development
 * Data Export Pipelines
 * Cloud Deployment
