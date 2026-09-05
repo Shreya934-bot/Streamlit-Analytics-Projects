@@ -39,7 +39,7 @@ From cleaning datasets and discovering trends to designing dashboards, building 
 
 # 🚀 Explore the Live Projects
 
-All five projects in this repository are deployed as interactive Streamlit applications.
+All six projects in this repository are deployed as interactive Streamlit applications.
 
 | # | Project | Focus | Live App |
 |:--:|---|---|---|
@@ -48,6 +48,7 @@ All five projects in this repository are deployed as interactive Streamlit appli
 | 🛡️ | **Fraud Detection Intelligence** | Transaction analysis, suspicious activity & risk | [🚀 Launch App](https://shreya-fraud-detection-intelligence.streamlit.app/) |
 | 🤖 | **ResumeAI — Smart Candidate Screening** | AI-powered resume matching, ranking & shortlisting | [🚀 Launch App](https://shreya-ai-resume.streamlit.app/) |
 | 📡 | **SocialPulse — Social Media Trend Intelligence** | Hashtag trends, engagement, sentiment & content intelligence | [🚀 Launch App](https://social-pulse-ai.streamlit.app/) |
+| 📈 | **Portfolio Intelligence Analyzer** | Portfolio performance, allocation, risk & momentum analytics | [🚀 Launch App](https://sv-portfolio-analyzer.streamlit.app/) |
 
 ---
 
@@ -318,6 +319,89 @@ Trend     Activity   Signals      Patterns      Distribution
 
 ---
 
+## 📈 06 — Portfolio Intelligence Analyzer
+
+> **Turning historical stock-price data into portfolio performance, allocation, risk, and momentum intelligence.**
+
+**Portfolio Intelligence Analyzer** is an interactive portfolio analytics application that transforms historical stock-price data into a focused dashboard for exploring portfolio performance, holdings, sector allocation, risk, drawdown, volatility, and moving-average momentum signals.
+
+The application supports both the included portfolio dataset and custom CSV uploads, allowing users to interactively filter the analysis and export generated reports.
+
+### ✨ Highlights
+
+- 📥 Upload and analyze custom stock CSV datasets
+- 💰 Portfolio value and Profit / Loss analysis
+- 📊 Portfolio return and performance tracking
+- 🏆 Best and worst performing holding identification
+- 📋 Detailed holdings-level analytics
+- 🏭 Sector allocation and concentration analysis
+- 🛡️ Sharpe ratio analysis
+- 📉 Maximum drawdown analysis
+- 📈 Annualized volatility measurement
+- 📊 Daily return and portfolio trajectory analysis
+- 🎯 Daily positive-return / win-rate analysis
+- 📈 Configurable moving-average momentum signals
+- 🔎 Interactive date, stock, and sector filters
+- 📊 Interactive Plotly visualizations
+- 📥 Downloadable portfolio and analytics reports
+- 🎨 Branded Streamlit dashboard
+- 🚀 Deployed on Streamlit Community Cloud
+
+### 🧠 Portfolio Intelligence Workflow
+
+```text
+Portfolio CSV Data
+        │
+        ▼
+Data Validation & Cleaning
+        │
+        ▼
+Portfolio Construction
+        │
+        ├──────────────┬──────────────┐
+        ▼              ▼              ▼
+   Performance      Allocation       Risk
+    Analytics        Analytics     Analytics
+        │              │              │
+        └──────────────┴──────────────┘
+                       │
+                       ▼
+               Momentum Analysis
+               Moving Average
+                       │
+                       ▼
+              Interactive Dashboard
+                       │
+                       ▼
+                Reports & Export
+```
+
+### 🧮 Risk & Momentum Analytics
+
+The application brings several analytical perspectives together:
+
+| Area | Analysis |
+|---|---|
+| 💰 Performance | Portfolio value, P/L, return %, best performer |
+| 🏭 Allocation | Holding and sector concentration |
+| 🛡️ Risk | Sharpe ratio, drawdown, volatility |
+| 📊 Returns | Daily returns, cumulative performance, win rate |
+| 📈 Momentum | Configurable moving-average signals |
+| 📑 Reporting | Portfolio, daily-return and momentum exports |
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `NumPy` · `Plotly` · `Matplotlib` · `Streamlit`
+
+### 🔗 Try It Live
+
+👉 **[Portfolio Intelligence Analyzer](https://sv-portfolio-analyzer.streamlit.app/)**
+
+📁 [`Portfolio_Analyzer`](./Portfolio_Analyzer)
+
+
+---
+
 # 🧰 My Analytics & AI Toolkit
 
 <div align="center">
@@ -440,6 +524,16 @@ Streamlit-Analytics-Projects/
 │   ├── requirements.txt
 │   └── README.md
 │
+├── 📈 Portfolio_Analyzer/
+│   ├── app.py
+│   ├── portfolio_analyzer.py
+│   ├── portfolio_analyzer.ipynb
+│   ├── stock_prices.csv
+│   ├── Reports/
+│   ├── charts/
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── .gitignore
 └── README.md
 ```
@@ -473,6 +567,11 @@ Through these projects, I am building practical experience in:
 * Engagement Analytics
 * Sentiment Analysis
 * Content Intelligence
+* Portfolio Analytics
+* Portfolio Performance Analysis
+* Risk & Drawdown Analysis
+* Sector Allocation Analysis
+* Momentum & Moving-Average Analysis
 * Python Application Development
 * Data Export Pipelines
 * Cloud Deployment
