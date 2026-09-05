@@ -39,7 +39,7 @@ From cleaning datasets and discovering trends to designing dashboards, building 
 
 # 🚀 Explore the Live Projects
 
-All seven projects in this repository are deployed as interactive Streamlit applications.
+All eight projects in this repository are deployed as interactive Streamlit applications.
 
 | # | Project | Focus | Live App |
 |:--:|---|---|---|
@@ -50,6 +50,7 @@ All seven projects in this repository are deployed as interactive Streamlit appl
 | 📡 | **SocialPulse — Social Media Trend Intelligence** | Hashtag trends, engagement, sentiment & content intelligence | [🚀 Launch App](https://social-pulse-ai.streamlit.app/) |
 | 📈 | **Portfolio Intelligence Analyzer** | Portfolio performance, allocation, risk & momentum analytics | [🚀 Launch App](https://sv-portfolio-analyzer.streamlit.app/) |
 | 💰 | **Smart Expense Tracker & Budget Analyzer** | Spending intelligence, budgeting, savings & trend analysis | [🚀 Launch App](https://sv-expense-tracker.streamlit.app/) |
+| 🧾 | **Invoice Intelligence** | Invoice extraction, payment status, overdue monitoring & financial reporting | [🚀 Launch App](https://sv-invoice-intelligence.streamlit.app/) |
 
 ---
 
@@ -483,6 +484,88 @@ Transaction Categorization
 
 ---
 
+## 🧾 08 — Invoice Intelligence
+
+> **Turning invoice files into structured financial records, payment-status insights, and export-ready reports.**
+
+**Invoice Intelligence** is an interactive document-processing and financial analytics application that transforms invoice data from CSV files or text-based PDF invoices into structured records and actionable operational insights.
+
+The application combines file ingestion, invoice-field extraction, data validation, invoice consolidation, overdue detection, visualization, searchable records, and downloadable reporting in a focused Streamlit workspace.
+
+### ✨ Highlights
+
+- 📥 Upload and analyze custom invoice CSV datasets
+- 📄 Upload one or more text-based PDF invoices
+- 🧾 Extract invoice and customer information
+- 📅 Process invoice and due dates
+- 🧮 Handle quantities, unit prices, line amounts and invoice totals
+- 🧹 Validate and clean invoice records
+- 🔗 Consolidate multiple item rows into invoice-level records
+- 🚨 Current vs overdue invoice classification
+- ⏱️ Days-overdue calculation
+- 💰 Total overdue amount monitoring
+- 📊 Monthly invoice value analysis
+- 👥 Top customer analysis
+- 📈 Invoice value trend visualization
+- 🔎 Invoice search and filtering
+- 📥 Exportable consolidated and overdue reports
+- 🎨 Branded Streamlit interface
+- 🚀 Deployed on Streamlit Community Cloud
+
+### 🧠 Invoice Intelligence Workflow
+
+```text
+Invoice Files
+CSV / Text-based PDF
+        │
+        ▼
+Data Validation & Extraction
+        │
+        ▼
+Cleaning & Normalization
+        │
+        ▼
+Invoice Consolidation
+        │
+        ├──────────────┬───────────────┐
+        ▼              ▼               ▼
+ Invoice Value    Payment Status   Customer Analysis
+ Analysis         & Overdue        & Trends
+        │              │               │
+        └──────────────┴───────────────┘
+                       │
+                       ▼
+             Interactive Dashboard
+                       │
+                       ▼
+                Reports & Export
+```
+
+### 🧮 Financial Intelligence
+
+| Area | Analysis |
+|---|---|
+| 🧾 Extraction | Invoice, customer, item and pricing information |
+| 💰 Value | Invoice totals and line-level amounts |
+| 📅 Timeline | Invoice dates and due dates |
+| 🚨 Payment | Current vs overdue classification |
+| ⏱️ Overdue | Days overdue and overdue value |
+| 👥 Customers | Customer-level invoice analysis |
+| 📊 Reporting | Consolidated, summary and overdue CSV reports |
+
+### 🛠️ Built With
+
+`Python` · `Pandas` · `NumPy` · `Plotly` · `Streamlit` · `pypdf` · `ReportLab`
+
+### 🔗 Try It Live
+
+👉 **[Invoice Intelligence](https://sv-invoice-intelligence.streamlit.app/)**
+
+📁 [`Invoice_Processor`](./Invoice_Processor)
+
+
+---
+
 # 🧰 My Analytics & AI Toolkit
 
 <div align="center">
@@ -625,6 +708,16 @@ Streamlit-Analytics-Projects/
 │   ├── requirements.txt
 │   └── README.md
 │
+├── 🧾 Invoice_Processor/
+│   ├── app.py
+│   ├── invoice_processor.py
+│   ├── Invoice_Processor.ipynb
+│   ├── sample_invoices.csv
+│   ├── invoices/
+│   ├── reports/
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── .gitignore
 └── README.md
 ```
@@ -667,6 +760,11 @@ Through these projects, I am building practical experience in:
 * Budget & Savings Analysis
 * Time-Series Spending Analysis
 * Trend-Based Forecasting
+* Invoice Data Processing
+* PDF Text Extraction
+* Invoice Consolidation
+* Payment & Overdue Analysis
+* Financial Reporting
 * Python Application Development
 * Data Export Pipelines
 * Cloud Deployment
